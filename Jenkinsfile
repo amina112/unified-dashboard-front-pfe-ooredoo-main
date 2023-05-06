@@ -20,7 +20,7 @@ pipeline {
         stage('Artifact Construction') {
              steps{
                 script{
-                    sh "ng build"
+                    sh "ng build --prod"
                 }
             }
         }
